@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="mt-6 text-black">
+    <div class="card bg-neutral p-6">
         <h2>Your Idea</h2>
         <div>
             {{$idea->description}}
