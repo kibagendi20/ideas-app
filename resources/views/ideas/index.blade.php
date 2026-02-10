@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout title="IDEA">
 
     @if(count($ideas))
         <div class="mt-6 text-white">
