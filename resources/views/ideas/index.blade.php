@@ -12,7 +12,9 @@
             </ul>
         </div>
     @else
-        <p class="text-white text-sm underline">You have no ideas. Click to Create</p>
+        <p>No ideas yet.</p>
     @endif
+        <p class="text-white text-sm underline mt-6"><a href="/ideas/create">Click to Create</a></p>
+
 </x-layout>
 

@@ -11,7 +11,7 @@ Route::get('/', function () {
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/ideas',[IdeaController::class, 'index'])->middleware('auth');
+    Route::get('/ideas',[IdeaController::class, 'index']);
     Route::get('/ideas/create', [IdeaController::class, 'create']);
     Route::get('/ideas/{idea}', [IdeaController::class, 'show']);
     Route::get('/ideas/{idea}/edit', [IdeaController::class, 'edit']);
@@ -33,3 +33,9 @@ Route::middleware('guest') ->group(function () {
 
 });
 
+
+//Route::get('/admin', function () {
+//
+//    Gate::authorize('view-admin');
+//    return 'Private';
+//});
